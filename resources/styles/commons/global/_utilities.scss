@@ -16,6 +16,15 @@ strong {
   //margin-bottom: 1.2em;
 }
 
+.second-title {
+  font-size: 1.8em;
+  font-family: $font-title;
+  font-weight: $font-weight-bold;
+  color: $r1-color-blue;
+  line-height: 1.2em;
+  text-shadow: 0 0.2rem 0.1em $r1-color-black;
+}
+
 /************
     TEXTES
 *************/

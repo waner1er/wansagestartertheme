@@ -1,0 +1,39 @@
+.r1-contact {
+  margin-top: 2rem;
+
+  &__text-input {
+    border: none;
+    font-family: $font-text;
+    font-size: 1.8rem;
+    color: $r1-color-blue;
+    margin: 1rem 0;
+
+    &::placeholder {
+      color: $r1-color-blue;
+    }
+  }
+  &__text-area {
+    border: 0.1rem solid $r1-color-blue;
+    font-family: $font-text;
+    font-size: 1.8rem;
+    color: $r1-color-blue;
+    margin: 1rem 0;
+    padding: 1rem;
+    &::placeholder {
+      color: $r1-color-blue;
+    }
+  }
+
+  .wpc7 {
+    &-form {
+
+    }
+  }
+}
+.footer__first-row__contact-me {
+  section {
+    .second-title{
+      margin: 2rem 0 5rem 0;
+    }
+  }
+}
