@@ -10,3 +10,8 @@
   }
 }
 
+.grid-4-equals-cols {
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+}
+
