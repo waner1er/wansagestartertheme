@@ -3,7 +3,7 @@
   margin: 0 auto 3rem auto;
   @include minWidth(960px) {
     background: $r1-color-blue-light;
-    margin:18rem auto 3rem;
+    margin:21.4rem auto 3rem;
   }
 
   &__wrapper {
@@ -17,7 +17,6 @@
   }
 
   &__custom-logo {
-    //background: $r1-color-blue;
     box-shadow: rgb(0 0 0 / 65%) 0px 0px 15px;
     width: 100%;
     &.active {
@@ -40,3 +39,5 @@
     margin: 2rem 0;
   }
 }
+
+
