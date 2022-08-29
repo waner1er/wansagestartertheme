@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  @include minWidth(960px) {
+    width: calc(100% - 4.2rem);
+  }
+  max-width: 128rem;
+  margin: 0 auto;
+}
+
+.container-large {
+  width: calc(100% - 4.2rem);
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+.alignwide {
+  margin-left: -50px;
+  margin-right: -50px;
+}
+
+.alignfull {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+

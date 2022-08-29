@@ -1,0 +1,12 @@
+.grid-2-equals-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-2-first-bigger {
+  @include minWidth(767px) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+

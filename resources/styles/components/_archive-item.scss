@@ -1,0 +1,28 @@
+&__item {
+  border: 1px solid r1-color-blue-dark;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  background: $r1-color-white;
+  transition: $r1-transition;
+  overflow: scroll;
+
+  &-thumbnail {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    &__img {
+      max-width: 15rem;
+    }
+  }
+  &-post-excerpt {
+    img {
+      max-width: 150px;
+    }
+  }
+
+  &:hover {
+    background: $r1-color-blue-light;
+    transition: $r1-transition;
+  }
+}
+

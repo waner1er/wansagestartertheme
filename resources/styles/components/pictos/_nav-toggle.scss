@@ -1,0 +1,52 @@
+.nav-burger, .nav-close {
+  width: 5rem;
+  height: 5rem;
+  position: fixed;
+  top: 2.5rem;
+  right: 2.5rem;
+  background: $r1-color-white;
+  border: none;
+
+  border-radius: $r1-border-radius;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @include minWidth(960px) {
+    display: none;
+  }
+}
+
+.nav-burger {
+  background: $r1-color-blue;
+  color: $r1-color-white;
+  &:hover {
+    background-color: $r1-color-grey-light;
+
+  }
+  &.active {
+    display: none;
+  }
+}
+
+.nav-close {
+  display: none;
+  background: $r1-color-blue;
+  color: $r1-color-white;
+  &:hover {
+    opacity: 0.9;
+  }
+  &.open {
+    display: block;
+    @include minWidth(960px) {
+      display: none;
+    }
+  }
+}
+
+

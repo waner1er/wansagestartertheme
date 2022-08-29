@@ -1,0 +1,45 @@
+@import "variables";
+@import "fonts";
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $font-text ;
+  font-size: 1.6rem;
+  background: $r1-color-blue-dark;
+  color: $r1-color-blue-dark;
+}
+
+#main-container {
+  min-height: 100vh;
+  margin-bottom: 5rem;
+}
+
+main {
+  background: $r1-color-white;
+  padding: 1rem;
+  @include minWidth(960px) {
+    border-radius: $r1-border-radius;
+    box-shadow: -2px -2px 15px 3px rgba(0, 0, 0, 0.35);
+  }
+}
+
+a {
+  color: $r1-color-blue-dark;
+  text-decoration: none;
+
+  &:link {
+    color: $r1-color-blue;
+    transition: ease-in-out 0.2s;
+
+    &:hover {
+      color: $r1-color-white;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: $r1-color-blue-dark;
+      transition: ease-in-out 0.2s;
+    }
+  }
+}

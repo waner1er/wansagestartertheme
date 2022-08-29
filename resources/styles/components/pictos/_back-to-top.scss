@@ -1,0 +1,25 @@
+.back-to-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  &__paragraph, &__svg {
+    font-weight: $font-weight-bold;
+  }
+  #toTop {
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 10000;
+    cursor: pointer;
+
+    background-color: $r1-color-blue-light;
+    border: none;
+    border-radius: $r1-border-radius;
+    color: $r1-color-white;
+    &:hover {
+      background-color: rgba($r1-color-blue-light, 0.9);
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.page-header {
+  background: $r1-color-blue-dark;
+  margin: 0 auto 3rem auto;
+  @include minWidth(960px) {
+    background: $r1-color-blue-light;
+    margin:18rem auto 3rem;
+  }
+
+  &__wrapper {
+    padding: 2rem 0;
+    #seokey-breadcrumbs {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+    }
+  }
+
+  &__custom-logo {
+    //background: $r1-color-blue;
+    box-shadow: rgb(0 0 0 / 65%) 0px 0px 15px;
+    width: 100%;
+    &.active {
+      display: block;
+    }
+    @include minWidth(960px) {
+      display: none;
+    }
+  }
+
+  .r1-custom-logo {
+
+    &__img {
+      width: 100px;
+      height: auto;
+    }
+  }
+
+  .main-title {
+    margin: 2rem 0;
+  }
+}

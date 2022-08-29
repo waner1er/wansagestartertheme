@@ -1,0 +1,15 @@
+@import "./app.scss";
+
+.editor-styles-wrapper .alignwide {
+  margin-left: -50px;
+  margin-right: -50px;
+  max-width: calc(100% - 350px) !important;
+}
+
+.editor-styles-wrapper alignfull {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+//.editor-styles-wrapper .edit-post-visual-editor__post-title-wrapper > .alignwide, .editor-styles-wrapper .block-editor-block-list__layout.is-root-container > .alignwide {
+//  max-width: 1440px!important;
+//}

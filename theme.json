@@ -1,0 +1,117 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "border": {
+    },
+    "color": {
+      "palette": [
+        {
+          "name": "Black",
+          "slug": "black",
+          "color": "#1E2B24"
+        },
+        {
+          "name": "Black Light",
+          "slug": "black-light",
+          "color": "#383c35"
+        },
+        {
+          "name": "White",
+          "slug": "white",
+          "color": "#FFFFFF"
+        },
+        {
+          "name": "Grey",
+          "slug": "grey",
+          "color": "#d0cfcf"
+        },
+        {
+          "name": "Grey Light",
+          "slug": "grey-light",
+          "color": "#e7e7e7"
+        },
+        {
+          "name": "Grey X Light",
+          "slug": "grey-x-light",
+          "color": "#f6f6f6"
+        },
+        {
+          "name": "Blue",
+          "slug": "blue",
+          "color": "#748DAA"
+        },
+        {
+          "name": "Blue Dark",
+          "slug": "blue-dark",
+          "color": "#313b4b"
+        },
+        {
+          "name": "Blue Light",
+          "slug": "blue-light",
+          "color": "#8AAEB5"
+        }
+      ],
+      "custom": false,
+      "customGradient": false,
+      "defaultPalette": false,
+      "defaultGradients": false
+    },
+    "custom": {},
+    "layout": {
+      "contentSize": "1280px",
+      "wideSize": "1770px"
+    },
+    "typography": {
+      "customFontSize": true,
+      "dropCap": true,
+      "fontSizes": [
+        {
+          "slug": "small",
+          "size": "16px",
+          "name": "Small"
+        },
+        {
+          "slug": "normal",
+          "size": "18px",
+          "name": "Normal"
+        },
+        {
+          "slug": "large",
+          "size": "24px",
+          "name": "Large"
+        },
+        {
+          "slug": "extra-large",
+          "size": "28px",
+          "name": "XL"
+        },
+        {
+          "slug": "huge",
+          "size": "32px",
+          "name": "Huge"
+        }
+      ],
+      "fontStyle": false,
+      "fluid": false,
+      "letterSpacing": true,
+      "lineHeight": true,
+      "textDecoration": true,
+      "textTransform": true
+    },
+    "spacing": {
+      "margin": false,
+      "padding": true,
+      "units": [
+        "px",
+        "%",
+        "em",
+        "rem",
+        "vw",
+        "vh"
+      ],
+      "blockGap": null
+    }
+  }
+}
+
