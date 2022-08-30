@@ -13,10 +13,6 @@
     margin: 2rem 0 5rem 0;
     text-align: center;
   }
-  &__wrapper {
-    height: 100%;
-  }
-
   &__item {
     padding: 2rem;
     margin: auto;
@@ -24,9 +20,78 @@
     width: fit-content;
     transition: ease-in-out 0.4s;
 
-    &:hover {
-      transition: ease-in-out 0.4s;
-      background: $r1-color-blue-light;
+    &--facebook {
+      &:hover {
+        transition: ease-in-out 0.4s;
+        background: $facebook-color;
+        .social-links__item__picto {
+          fill: $r1-color-white;
+        }
+      }
+    }
+    &--twitter {
+      &:hover {
+        transition: ease-in-out 0.4s;
+        background: $twitter-color;
+        .social-links__item__picto {
+          fill: $r1-color-white;
+        }
+      }
+    }
+    &--instagram {
+      &:hover {
+        transition: ease-in-out 0.4s;
+        background: $instagram-color;
+        .social-links__item__picto {
+          fill: $r1-color-white;
+        }
+      }
+    }
+    &--pinterest {
+      &:hover {
+        transition: ease-in-out 0.4s;
+        background: $pinterest-color;
+        .social-links__item__picto {
+          fill: $r1-color-white;
+        }
+      }
+    }
+    &--whatsapp {
+      &:hover {
+        transition: ease-in-out 0.4s;
+        background: $whatsapp-color;
+        .social-links__item__picto {
+          fill: $r1-color-white;
+        }
+      }
+    }
+    &--youtube {
+      &:hover {
+        transition: ease-in-out 0.4s;
+        background: $youtube-color;
+        .social-links__item__picto {
+          fill: $r1-color-white;
+        }
+      }
+    }
+    &--linkedin {
+      &:hover {
+        transition: ease-in-out 0.4s;
+        background: $linkedin-color;
+        .social-links__item__picto {
+          fill: $r1-color-white;
+        }
+      }
+    }
+    &--tiktok {
+      &:hover {
+        transition: ease-in-out 0.4s;
+        .social-links__item__picto {
+          color: #111111;
+
+          filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
+        }
+      }
     }
   }
 

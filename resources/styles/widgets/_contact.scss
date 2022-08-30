@@ -1,32 +1,56 @@
 .r1-contact {
   margin-top: 2rem;
+  &__first-row {
 
+  }
+  &__second-row {
+    width: 100%;
+  }
+  &__third-row {
+
+  }
   &__text-input {
-    border: none;
     font-family: $font-text;
     font-size: 1.8rem;
     color: $r1-color-blue;
-    margin: 1rem 0;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid $r1-color-grey-x-light;
+    border-radius: $r1-border-radius;
 
     &::placeholder {
-      color: $r1-color-blue;
+      color: $r1-color-grey-light;
     }
   }
   &__text-area {
-    border: 0.1rem solid $r1-color-blue;
+    //border: 0.1rem solid $r1-color-blue;
     font-family: $font-text;
     font-size: 1.8rem;
     color: $r1-color-blue;
-    margin: 1rem 0;
+    margin: 1rem;
     padding: 1rem;
+    height: 3rem;
+    border: 1px solid $r1-color-grey-x-light;
+    border-radius: $r1-border-radius;
     &::placeholder {
-      color: $r1-color-blue;
+      color: $r1-color-grey-light;
     }
   }
 
-  .wpc7 {
+  .wpcf7 {
     &-form {
 
+    }
+    &-submit {
+      border: none;
+      background-color: $r1-color-blue-light;
+      padding: 0.5rem 1rem;
+      border-radius: $r1-border-radius;
+      color: $r1-color-white;
+      &:hover {
+        background: $r1-color-grey-light;
+        cursor: pointer;
+      }
     }
   }
 }

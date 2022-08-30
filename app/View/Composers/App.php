@@ -2,10 +2,13 @@
 
 namespace App\View\Composers;
 
+use JetBrains\PhpStorm\ArrayShape;
 use Roots\Acorn\View\Composer;
 
 class App extends Composer
 {
+
+    public $r1_breadcrumbs_data;
     /**
      * List of views served by this composer.
      *
@@ -23,7 +26,7 @@ class App extends Composer
     public function with()
     {
         return [
-            'siteName' => $this->siteName(),
+            'siteName'   => $this->siteName(),
         ];
     }
 
@@ -36,6 +39,5 @@ class App extends Composer
     {
         return get_bloginfo('name', 'display');
     }
-
 
 }

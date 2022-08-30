@@ -10,7 +10,7 @@ const main = async (err) => {
     }
 
 
-  /**
+    /**
      * Toggle Navbar
      */
     function toggleNavMenu() {
@@ -88,12 +88,15 @@ const main = async (err) => {
      */
     function topFunction() {
       let button = document.getElementById('toTop');
+      let customLogo = document.querySelector('.primary-navigation > .r1-custom-logo > .r1-custom-logo__img');
       window.addEventListener('scroll', (event) => {
         let scroll = window.scrollY;
         if (scroll >= 20) {
           button.style.display = "block";
+          customLogo.classList.add('scrolled');
         } else {
           button.style.display = "none";
+          customLogo.classList.remove('scrolled');
         }
       })
       button.addEventListener('click', function () {

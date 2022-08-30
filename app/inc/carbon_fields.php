@@ -11,21 +11,28 @@ Container::make('term_meta', __('Category Properties'))
              Field::make('image', 'cat_thumb', __('Category Thumbnail')),
          ));
 
-Container::make('theme_options', __('Mes Réseaux sociaux'))
-         ->set_icon('dashicons-share')
+// Default options page
+$basic_options_container = Container::make('theme_options', __('Options'))
+    ->set_page_menu_position(2)
+    ->add_fields(array(
+        Field::make('html', 'crb_information_text')
+             ->set_html('<h2>Page d\'options</h2><p>Ici se trouvent les différentes options de votre thème .</p>')
+    ));
+Container::make('theme_options', __('Social Links'))
+         ->set_page_parent($basic_options_container) // reference to a top level container
          ->add_tab('facebook', array(
-             Field::make('text', 'r1_social_url_facebook', 'Facebook URL')
-                  ->set_attribute('placeholder', __('my Facebook URL')),
-             Field::make('select', 'r1_social_url_facebook_number', __('Choose Options'))
-                 ->set_options( array(
-                     '1' => 1,
-                     '2' => 2,
-                     '3' => 3,
-                     '4' => 4,
-                     '5' => 5,
-                     '6' => 6,
-                     '7' => 7,
-                 ) )
+        Field::make('text', 'r1_social_url_facebook', 'Facebook URL')
+             ->set_attribute('placeholder', __('my Facebook URL')),
+        Field::make('select', 'r1_social_url_facebook_number', __('Choose Options'))
+             ->set_options(array(
+                 '1' => 1,
+                 '2' => 2,
+                 '3' => 3,
+                 '4' => 4,
+                 '5' => 5,
+                 '6' => 6,
+                 '7' => 7,
+             ))
          ))
          ->add_tab('twitter', array(
              Field::make('text', 'r1_social_url_twitter', 'twitter URL')
@@ -125,4 +132,9 @@ Container::make('theme_options', __('Mes Réseaux sociaux'))
                       '7' => 7,
                   ))
          ));
-
+Container::make('theme_options', __('Blog'))
+         ->set_page_parent($basic_options_container)
+         ->add_fields(array(
+             Field::make('text', 'r1-home-title', __('Blog Title')),
+             Field::make('textarea', 'r1-home-description', __('Blog Description'))
+         )); // reference to a top level container

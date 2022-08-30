@@ -13,7 +13,8 @@ class Archives extends Composer {
     protected static $views = [
         'components.archive-item',
         'home',
-        'components.home-archive-loop'
+        'components.home-archive-loop',
+
     ];
 
     /**

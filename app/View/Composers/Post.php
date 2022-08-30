@@ -28,12 +28,13 @@ class Post extends Composer
     public function with()
     {
         return [
-            'title'     => $this->title(),
-            'excerpt'   => get_the_excerpt(),
-            'content'   => get_the_content(),
-            'thumbnail' => $this->thumbnail(),
-            'permalink' => get_permalink(),
-            'logo' => get_custom_logo('full')
+            'title'       => $this->title(),
+            'description' => $this->description(),
+            'excerpt'     => get_the_excerpt(),
+            'content'     => get_the_content(),
+            'thumbnail'   => $this->thumbnail(),
+            'permalink'   => get_permalink(),
+            'logo'        => get_custom_logo('full')
         ];
     }
 
@@ -42,22 +43,17 @@ class Post extends Composer
      *
      * @return string
      */
-    public function title()
-    {
-        if ($this->view->name() !== 'partials.page-header') {
-            return get_the_title();
-        }
+    public function title(): string {
+//        if ($this->view->name() !== 'partials.page-header') {
+//            return get_the_title();
+//        }
 
         if (is_home()) {
-            if ($home = get_option('page_for_posts', true)) {
-                return get_the_title($home);
-            }
-
-            return __('Latest Posts', 'sage');
+                return carbon_get_theme_option('r1-home-title');
         }
 
         if (is_archive()) {
-            return post_type_archive_title('', false);
+            return get_the_archive_title();
         }
         if (is_search()) {
             return sprintf(
@@ -73,6 +69,15 @@ class Post extends Composer
         }
 
         return get_the_title();
+    }
+
+    public function description()
+    {
+        if (is_archive()) {
+            return get_the_archive_description();
+        }
+
+        return substr(get_the_excerpt(), 0, 44) . ' (...) ';
     }
 
     public function thumbnail()

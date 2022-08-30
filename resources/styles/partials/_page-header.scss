@@ -21,12 +21,22 @@
     width: 100%;
     &.active {
       display: block;
+      background: $r1-color-grey-x-light;
     }
     @include minWidth(960px) {
       display: none;
     }
   }
+  &__title, &__description {
+    margin: 2rem 0;
+  }
 
+  &__description {
+    font-family: $font-title;
+    &:first-letter{
+      text-transform: uppercase;
+    }
+  }
   .r1-custom-logo {
 
     &__img {
@@ -35,9 +45,9 @@
     }
   }
 
-  .main-title {
-    margin: 2rem 0;
-  }
+  //.main-title {
+  //  margin: 2rem 0;
+  //}
 }
 
 

@@ -14,6 +14,13 @@
   .r1-custom-logo {
     display: flex;
     justify-content: center;
+    &__img {
+      &.scrolled {
+        width: 10rem;
+        height: auto;
+        transition: ease-in-out 0.4s;
+      }
+    }
   }
 
   &__list {
@@ -122,6 +129,10 @@
         }
       }
     }
+  }
+
+  &.scrolled {
+
   }
 }
 

@@ -1,27 +1,23 @@
 .footer {
-  background: $r1-color-white;
+  background: $r1-color-blue-x-light;
   display: flex;
   flex-direction: column;
 
   &__first-row, &__second-row {
-    padding: 5rem 0;
+    padding: 3rem 0 5rem 0;
   }
 
   &__first-row {
-    width: 100%;
-    max-width: 144rem;
+    width: 95%;
     margin: 0 auto;
     &__social-network, &__contact-me {
-      //provisoire
-      //border: 1px solid #000;
-      //padding: 0 5rem;
     }
   }
 
   &__second-row {
     position: relative;
     padding: 2rem 5rem;
-    background-color: $r1-color-grey-light;
+    background-color: $r1-color-blue-light;
 
     .wrapper {
       .footer_navigation {

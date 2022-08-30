@@ -37,6 +37,7 @@ add_filter('nav_menu_submenu_css_class', function ($classes, $args) {
     if (isset($args->add_sub_menu_ul_class)) {
         $classes[] = $args->add_sub_menu_ul_class;
     }
+
     return $classes;
 }, 1, 2);
 
@@ -54,3 +55,7 @@ add_filter('get_custom_logo', function ($html) {
 
     return $html;
 });
+
+
+
+
