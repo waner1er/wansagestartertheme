@@ -38,8 +38,8 @@ a {
 
     &:hover {
       color: $r1-color-white;
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: $r1-color-blue-dark;
+      //-webkit-text-stroke-width: 1px;
+      //-webkit-text-stroke-color: $r1-color-blue-dark;
       transition: ease-in-out 0.2s;
     }
   }
