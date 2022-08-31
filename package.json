@@ -24,6 +24,7 @@
     "@roots/sage": "6.3.3"
   },
   "dependencies": {
+    "@wordpress/block-editor": "^9.8.0",
     "@wordpress/blocks": "^11.14.0",
     "aos": "^3.0.0-beta.6",
     "sass": "^1.54.4"

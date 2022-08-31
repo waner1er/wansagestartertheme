@@ -3,6 +3,7 @@
     <h2 class="entry-title">
       <a href="{{ $permalink }}">
         {!! $title !!}
+      </a>
     </h2>
 
     @include('partials.entry-meta')

@@ -72,6 +72,9 @@
       "providers": [
         "App\\Providers\\ThemeServiceProvider"
       ]
+    },
+    "installer-paths": {
+      "App/vendor/{$vendor}/{$name}": ["htmlburger/carbon-fields"]
     }
   },
   "post-autoload-dump": [
