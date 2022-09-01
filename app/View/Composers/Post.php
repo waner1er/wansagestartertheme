@@ -31,7 +31,7 @@ class Post extends Composer
             'title'       => $this->title(),
             'description' => $this->description(),
             'excerpt'     => get_the_excerpt(),
-            'content'     => get_the_content(),
+            'content'     => $this->content(),
             'thumbnail'   => $this->thumbnail(),
             'permalink'   => get_permalink(),
             'logo'        => get_custom_logo('full')
@@ -44,9 +44,9 @@ class Post extends Composer
      * @return string
      */
     public function title(): string {
-//        if ($this->view->name() !== 'partials.page-header') {
-//            return get_the_title();
-//        }
+        if ($this->view->name() !== 'partials.page-header') {
+            return get_the_title();
+        }
 
         if (is_home()) {
                 return carbon_get_theme_option('r1-home-title');
@@ -90,5 +90,9 @@ class Post extends Composer
         }
 
         return $thumbnail;
+    }
+
+    public function content() {
+        return get_the_content();
     }
 }

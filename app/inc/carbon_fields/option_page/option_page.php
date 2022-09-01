@@ -1,23 +1,15 @@
 <?php
 
-use App\inc\SocialNetwork\SocialNetwork;
-use Carbon_Fields\Block;
 use Carbon_Fields\Container;
 use Carbon_Fields\Field;
 
-Container::make('term_meta', __('Category Properties'))
-         ->where('term_taxonomy', '=', 'category')
-         ->add_fields(array(
-             Field::make('image', 'cat_thumb', __('Category Thumbnail')),
-         ));
-
-// Default options page
 $basic_options_container = Container::make('theme_options', __('Options'))
     ->set_page_menu_position(2)
     ->add_fields(array(
         Field::make('html', 'crb_information_text')
              ->set_html('<h2>Page d\'options</h2><p>Ici se trouvent les différentes options de votre thème .</p>')
     ));
+
 Container::make('theme_options', __('Social Links'))
          ->set_page_parent($basic_options_container) // reference to a top level container
          ->add_tab('facebook', array(
@@ -132,6 +124,7 @@ Container::make('theme_options', __('Social Links'))
                       '7' => 7,
                   ))
          ));
+
 Container::make('theme_options', __('Blog'))
          ->set_page_parent($basic_options_container)
          ->add_fields(array(
